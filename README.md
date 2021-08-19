@@ -55,7 +55,7 @@ namespace WindowsFormsApp1.Models
 					db.Open();
 				}
 
-     			return db.Query<Product>("SELECT ProductId, ProductName, UnitPrice, Barcode, UnitsInStock FROM Products;", commandType: CommandType.Text);
+     			        return db.Query<Product>("SELECT ProductId, ProductName, UnitPrice, Barcode, UnitsInStock FROM Products;", commandType: CommandType.Text);
 			}
         }
 
